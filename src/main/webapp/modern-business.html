@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<title>Modern Business - Start Bootstrap Template</title>
+
+<!-- Bootstrap core CSS -->
+<link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+<!-- Add custom CSS here -->
+<!-- <link href="css/modern-business.css" rel="stylesheet"> -->
+<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+<style type="text/css">
+html,body {
+	height: 100%;
+}
+
+body {
+	padding-top: 130px;
+	
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 22px;
+	color: #666;
+	-webkit-font-smoothing: antialiased;
+}
+h1,h2,h3,h4,h5,h6{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	line-height: 22px;
+	color: #666;
+	-webkit-font-smoothing: antialiased;
+}
+
+.fill {
+	width: 100%;
+	height: 100%;
+	background-position: center;
+	background-size: cover;
+}
+
+.sep {
+	height: 5px;
+	background: #999999 url("./img/sep.png") repeat;
+}
+
+/* Page Sections */
+.section,.section-colored {
+	padding: 20px 0;
+}
+
+.section-colored {
+	background-color: #e1e1e1;
+	/* change this to change the background color of a colored section */
+}
+
+/* carousel  */
+#myCarousel {
+	
+}
+
+#myCarousel .item {
+	height: 350px;
+	background-color: #bbb;
+}
+
+#myCarousel img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	min-width: 100%;
+}
+
+/* nav-logo  */
+.nav-logo {
+	height: 80px;
+	background: #FFFFFF url("../images/back.png") repeat;
+}
+
+.logo-left {
+	padding-top: 10px;
+}
+
+.logo-right {
+	padding-top: 40px;
+	font-size: 10px;
+}
+
+.logo-right a,.logo-right a:visited {
+	display: block;
+	color: #777777;
+	line-height: 16px;
+}
+
+.logo-right a:hover {
+	color: #0000ff;
+	text-decoration: none;
+}
+
+/* bs-docs-nav  */
+.bs-docs-nav {
+	margin-top: 80px;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, .15);
+	background-color: #563d7c;
+	border-color: #463265;
+	box-shadow: 0 1px 0 rgba(255, 255, 255, .1);
+}
+
+.bs-docs-nav .navbar-collapse {
+	border-color: #463265;
+}
+
+.bs-docs-nav .navbar-brand {
+	color: #fff;
+}
+
+.bs-docs-nav .navbar-nav>li>a {
+	color: #cdbfe3;
+}
+
+.bs-docs-nav .navbar-nav>li>a:hover {
+	color: #fff;
+}
+
+.bs-docs-nav .navbar-nav>.active>a,.bs-docs-nav .navbar-nav>.active>a:hover
+	{
+	color: #fff;
+	background-color: #463265;
+}
+
+.bs-docs-nav .navbar-toggle {
+	border-color: #563d7c;
+}
+
+.bs-docs-nav .navbar-toggle:hover {
+	background-color: #463265;
+	border-color: #463265;
+}
+/* bs-docs-nav  */
+.ds-panel {
+	margin: 0px;
+}
+
+/* Back to top */
+.totop {
+	position: fixed;
+	bottom: 0px;
+	right: 0px;
+	z-index: 104400;
+}
+
+.totop a,.totop a:visited {
+	display: block;
+	width: 30px;
+	height: 30px;
+	color: #fff;
+	text-align: center;
+	line-height: 30px;
+	background: #ff5d5e;
+}
+
+.totop a:hover {
+	color: #fff;
+	text-decoration: none;
+	background: #df4c4d;
+}
+
+/* Footer */
+footer {
+	border-top: 4px solid #ff5d5e;
+	background: #000000 url("../img/footer.png") repeat;
+	padding-top:15px;
+	padding-bottom:10px;
+	margin-bottom:0px;		
+	color: #aaa;
+	box-shadow: inset 0px 0px 10px #000;
+}
+
+footer a,footer a:visited {
+	color: #ddd;
+}
+
+footer a:hover {
+	color: #ccc;
+	text-decoration: underline;
+}
+
+footer .copy {
+	font-size: 11px;
+}
+
+</style>
+
+
+</head>
+
+<body>
+
+	<nav class="navbar navbar-default navbar-fixed-top nav-logo">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 col-sm-4">
+					<div class="logo-left">
+						<img src="./images/logo.png" class="img-responsive">
+						<!-- <a href="#">Metro <span class="color">Mania</span></a>
+						<div class="hmeta">Responsive Metro Styled Theme</div> -->
+					</div>
+				</div>
+				<!-- <div class="col-md-4 col-sm-4"></div> -->
+				<div class="col-md-4 col-sm-4 col-md-offset-4">
+					<div class="text-right logo-right">
+						<div>
+							<a class="navbar-link"><i class="fa fa-phone"
+								style="color: green;"></i> 021-60347730</a>
+						</div>
+						<!--  <ul class=" list-unstyled">
+							<li><a class="navbar-link" href="#"
+								onclick="SetHome(this,window.location)"><i
+									class="fa fa-check-circle" style="color: green;"></i> 设为首页 </a></li>
+							<li><a class="navbar-link" href="#"
+								onclick="AddFavorite(window.location,document.title)"><i
+									class="fa fa-check-circle" style="color: green;"></i> 收藏本站 </a></li>
+						</ul>-->
+
+					</div>				
+				</div>
+			</div>
+		</div>
+		<!-- /.container -->
+	</nav>
+
+	<nav class="navbar navbar-inverse navbar-fixed-top bs-docs-nav"
+		role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse"
+					data-target=".navbar-ex1-collapse">
+					<span class="sr-only">Toggle navigation</span> <span
+						class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">上海宇实文化传播有限公司</a>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse navbar-ex1-collapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#">首页</a></li>
+					<li><a href="#">公司简介</a></li>
+					<li class="dropdown"><a href="#" class="dropdown-toggle"
+						data-toggle="dropdown">服务范围 <b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">TVC电视广告</a></li>
+							<li><a href="#">病毒视频</a></li>
+							<li><a href="#">企业年会视频</a></li>
+							<li><a href="#">会议纪录</a></li>
+							<li><a href="#">数字微电影</a></li>
+							<li><a href="#">企业宣传片</a></li>
+							<li><a href="#">媒体广告投放</a></li>
+							<li><a href="#">模特艺人经济</a></li>
+							<li><a href="#">平面拍摄</a></li>
+						</ul></li>
+					<li><a href="#">企业文化</a></li>
+					<li class="dropdown"><a href="#" class="dropdown-toggle"
+						data-toggle="dropdown">团队介绍 <b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">1 Column Portfolio</a></li>
+							<li><a href="#">2 Column Portfolio</a></li>
+							<li><a href="#">3 Column Portfolio</a></li>
+							<li><a href="#">4 Column Portfolio</a></li>
+							<li><a href="#">Single Portfolio Item</a></li>
+						</ul></li>
+
+					<li><a href="#">加入我们</a></li>
+					<li><a href="#">联系我们</a></li>
+				</ul>
+			</div>
+			<!-- /.navbar-collapse -->
+		</div>
+		<!-- /.container -->
+	</nav>
+
+	<div id="myCarousel" class="carousel slide">
+		<!-- Indicators -->
+		<ol class="carousel-indicators">
+			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+			<li data-target="#myCarousel" data-slide-to="1"></li>
+			<li data-target="#myCarousel" data-slide-to="2"></li>
+		</ol>
+
+		<!-- Wrapper for slides -->
+		<div class="carousel-inner">
+			<div class="item active">
+				<!--<div class="fill back-one "></div>-->
+				<img src="./images/2.jpg" class="img-responsive">
+				<div class="carousel-caption">
+					<h1>Modern Business - A Bootstrap 3 Template</h1>
+				</div>
+			</div>
+			<div class="item">
+				<!--<div class="fill back-two"></div>-->
+				<img src="./images/3.jpg" class="img-responsive">
+				<div class="carousel-caption">
+					<h1>Ready to Style &amp; Add Content</h1>
+				</div>
+			</div>
+			<div class="item">
+				<!--<div class="fill back-three"></div> -->
+				<img src="./images/4.jpg" class="img-responsive">
+				<div class="carousel-caption">
+					<h1>
+						Additional Layout Options at <a href="http://startbootstrap.com">http://startbootstrap.com</a>
+					</h1>
+				</div>
+			</div>
+		</div>
+
+		<!-- Controls -->
+		<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+			<span class="icon-prev"></span>
+		</a> <a class="right carousel-control" href="#myCarousel"
+			data-slide="next"> <span class="icon-next"></span>
+		</a>
+	</div>
+	<!--  /.Controls      -->
+
+	<div class="sep"></div>
+
+	<div class="section-colored">
+
+		<div class="container">
+
+			<div class="row">
+				<div class="col-lg-8 col-md-8">
+					<div class="panel panel-default ds-panel">
+
+						<div class="panel-heading">
+							<h3 class="panel-title">
+								<i class="fa fa-home" style="color: red;"></i> 公司简介
+							</h3>
+						</div>
+						<div class="panel-body">
+							<div class="media">
+								<a class="pull-left" href="#"> <img
+									class="media-object img-thumbnail"
+									src="./images/1-200200.jpg" alt="...">
+								</a>
+								<div class="media-body">
+									<p style="padding-top: 30px;">上海宇实文化传播有限公司——商业影像内容整合运营平台，成立于2012年，是一支充满活力和想象力的顶尖技术团队。宇实文化传播作为综合性的文化传媒公司，具有强劲驱动媒体业界发展的势头。目前，公司运营主体为新媒体、商业影视制作、展览展示工程、三维动画四大主体，拥有强大的研发团队、一流的策略团队、专业的影视制作团队以及高执行力的施工团队，能够为客户提供完善的一体化服务。</p>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-4">
+					<div id="iconCarousel" class="carousel slide" style="margin-top: 20px;">
+						<!-- Carousel items -->
+						<div class="carousel-inner text-center">
+							<div class="item active">
+								<img src="./images/4-700450.jpg"
+									class="img-responsive">
+								<div class="carousel-caption">
+									<h1>
+										Additional Layout Options at <a
+											href="http://startbootstrap.com">0000</a>
+									</h1>
+								</div>
+							</div>
+							<div class="item">
+								<img src="./images/2-700450.jpg" class="img-responsive">
+								<div class="carousel-caption">
+									<h1>
+										Additional Layout Options at <a
+											href="http://startbootstrap.com">1111</a>
+									</h1>
+								</div>
+							</div>
+							<div class="item">
+								<img src="./images/3-700450.jpg" class="img-responsive">
+								<div class="carousel-caption">
+									<h1>
+										Additional Layout Options at <a
+											href="http://startbootstrap.com">2222</a>
+									</h1>
+								</div>
+							</div>
+							<div class="item">
+								<img src="./images/5-700450.jpg" class="img-responsive">
+								<div class="carousel-caption">
+									<h1>
+										Additional Layout Options at <a
+											href="http://startbootstrap.com">3333</a>
+									</h1>
+								</div>
+							</div>
+
+						</div>
+						<!-- Carousel nav -->
+						<a class="left carousel-control" href="#iconCarousel"
+							data-slide="prev"> <span class="icon-prev"></span>
+						</a> <a class="right carousel-control" href="#iconCarousel"
+							data-slide="next"> <span class="icon-next"></span>
+						</a>
+					</div>
+					<!-- <div class="text-center"><h3>公司产品展播</h3></div> -->
+				</div>
+			</div>
+			<!-- /.row -->
+
+		</div>
+		<!-- /.container -->
+
+	</div>
+	<!-- /.section -->
+
+	<div class="section">
+
+		<div class="container">
+
+			<div class="row">
+				<!-- <div class="col-lg-12 text-center">
+					<h2>Display Some Work on the Home Page Portfolio</h2>
+					<hr>
+				</div> -->
+				<div class="col-lg-4 col-md-4 col-sm-6">
+					<div class="thumbnail">
+						<a href="portfolio-item.html"> <img
+							class="img-responsive img-rounded" src="./images/2-700450.jpg">
+						</a>
+						<div class="caption flex">
+							Thumbnail label
+							<p>...</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-6">
+					<div class="thumbnail">
+						<a href="portfolio-item.html"> <img
+							class="img-responsive img-rounded" src="./images/3-700450.jpg">
+						</a>
+						<div class="caption flex">
+							Thumbnail label
+							<p>...</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-6">
+					<div class="thumbnail">
+						<a href="portfolio-item.html"> <img
+							class="img-responsive img-rounded" src="./images/4-700450.jpg">
+						</a>
+						<div class="caption flex">
+							Thumbnail label
+							<p>...</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-6">
+					<div class="thumbnail">
+						<a href="portfolio-item.html"> <img
+							class="img-responsive img-rounded" src="./images/2-700450.jpg">
+						</a>
+						<div class="caption flex">
+							Thumbnail label
+							<p>...</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-6">
+					<div class="thumbnail">
+						<a href="portfolio-item.html"> <img
+							class="img-responsive img-rounded" src="./images/3-700450.jpg">
+						</a>
+						<div class="caption flex">
+							Thumbnail label
+							<p>...</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-6">
+					<div class="thumbnail">
+						<a href="portfolio-item.html"> <img
+							class="img-responsive img-rounded" src="./images/4-700450.jpg">
+						</a>
+						<div class="caption flex">
+							Thumbnail label
+							<p>...</p>
+						</div>
+					</div>
+				</div>
+				<hr>
+				<a href="/" class="btn btn-primary pull-right btnNext"
+					style="margin-right: 15px;">More <i
+					class="glyphicon glyphicon-chevron-right"></i></a>
+			</div>
+			<!-- /.row -->
+
+		</div>
+		<!-- /.container -->
+
+	</div>
+	<!-- /.section -->
+
+	<div class="section-colored">
+
+		<div class="container">
+
+			<div class="row">
+				<div class="col-lg-6 col-md-6 col-sm-6">
+					<h2>Modern Business Features Include:</h2>
+					<ul>
+						<li>Bootstrap 3 Framework</li>
+						<li>Mobile Responsive Design</li>
+						<li>Predefined File Paths</li>
+						<li>Working PHP Contact Page</li>
+						<li>Minimal Custom CSS Styles</li>
+						<li>Unstyled: Add Your Own Style and Content!</li>
+						<li>Font-Awesome fonts come pre-installed!</li>
+						<li>100% <strong>Free</strong> to Use
+						</li>
+						<li>Open Source: Use for any project, private or commercial!</li>
+					</ul>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-6">
+					<img class="img-responsive" src="./images/700450-03.png">
+				</div>
+			</div>
+			<!-- /.row -->
+
+		</div>
+		<!-- /.container -->
+
+	</div>
+	<!-- /.section-colored -->
+
+
+	<!-- Footer starts -->
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">									
+					<!-- Copyright info -->
+					<p class="copy">
+						Copyright © 2014 | <a href="#">Your Site</a> - <a href="#">Home</a>
+						| <a href="#">About Us</a> | <a href="#">Service</a> | Designed by
+						<a href="#">Bootstrap Themes</a>
+					</p>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</footer>
+	<!-- /.container -->
+
+	<!-- Scroll to top -->
+	<span class="totop" style="display: none;"><a href="#"><i
+			class="fa fa-angle-up"></i></a></span>
+
+
+	<!-- JavaScript -->
+	<script src="js/jquery-1.11.0.js"></script>
+	<script src="bootstrap/js/bootstrap.js"></script>
+	<script src="js/custom.js"></script>
+
+
+</body>
+
+</html>
